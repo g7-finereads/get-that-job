@@ -14,7 +14,11 @@ body {
     height: 100px;
     font-weight: bold;
     text-align: center;
-    background-color: #FFFFFF
+    background-color: #FFFFFF;
+}
+.navbar  a:link, a:visited {
+    text-decoration: none;
+    color: black;
 }
 .nav-logo {
     display: flex;
@@ -39,17 +43,21 @@ body {
     justify-content: center;
     align-items: center;
 }
-.nav-buttons a:link, a:visited {
-    text-decoration: none;
-    color: black;
-}
 .nav-buttons a:nth-child(4){
-    width: 6vw;
-    font-size: 1vw;
+    width: 6.5vw;
+    font-size: 1.1vw;
     margin-left: 70px;
     border: 4px solid black;
     border-radius: 8px;
     text-transform: uppercase;
+    transition: 0.3s;
+}
+.nav-buttons a:nth-child(4):hover {
+    border-color: #000000;
+    background: rgb(153,56,236);
+    background: linear-gradient(105deg, rgba(153,56,236,1) 0%, rgba(128,53,241,1) 25%, rgba(102,50,246,1) 51%, rgba(57,47,251,1) 80%, rgba(60,45,255,1) 100%);
+    transition: 0.4s;
+    color: #FFFFFF;
 }
 .nav-buttons a:nth-child(5){
     width: 14vw;
