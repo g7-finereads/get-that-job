@@ -7,6 +7,8 @@
 body {
     font-family: 'Nunito', sans-serif;
     background-color: #F7FAFC;
+    width: 100%;
+    height: auto;
 }
 a:link, a:visited {
     text-decoration:none ;
@@ -62,7 +64,6 @@ a:link, a:visited {
     transition: 0.4s;
     color: #FFFFFF;
 }
-/*************LANDING*************/
 .nav-buttons a:nth-child(5){
     width: 14vw;
     font-size: 1.1vw;
@@ -71,15 +72,28 @@ a:link, a:visited {
     color: #3C2DFF;
     text-transform: uppercase;
 }
+/*************LANDING*************/
+#landing-upper {
+    display: flex;
+}
+#landing-lower {
+    background-color: #3C2DFF;
+    color: #FFFFFF;
+}
+/*************CONTACT*************/
+#footer-contact-container {
+    background-color: #F7FAFC;
+}
 /*************FOOTER*************/
 footer {
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
 }
-#footer-text-container {
+#footer-links-container {
     display: flex;
     justify-content: space-around;
+    margin: 10% 0 10% 0 ;
 }
 .footer-column {
     display: flex;
