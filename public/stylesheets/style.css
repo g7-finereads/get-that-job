@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
 /*************GLOBAL*************/
 * {
   margin: 0;
@@ -25,7 +26,7 @@ a:visited {
     color: #FFFFFF;
     width: 35%;
     height: 45px;
-    font-size: 1vw;
+    font-size: 0.8vw;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -33,21 +34,45 @@ a:visited {
     text-transform: uppercase;
     border-radius: 4px;
     margin: 20px 0 20px 0;
+    transition: 0.3s;
+}
+.button:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: white;
+    color: #3C2DFF;
+    border: 2px solid #3C2DFF;
 }
 /*************NAVBAR*************/
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100px;
   font-weight: bold;
   text-align: center;
   background-color: #ffffff;
+    padding: 0 10% 0 10%;
 }
 .nav-logo {
   display: flex;
   align-items: center;
+    height: 100px;
+    transition: 0.3s;
+}
+.nav-logo:hover {
+    color: white;
+    background: linear-gradient(
+            105deg,
+            rgba(153, 56, 236, 1) 0%,
+            rgba(128, 53, 241, 1) 25%,
+            rgba(102, 50, 246, 1) 51%,
+            rgba(57, 47, 251, 1) 80%,
+            rgba(60, 45, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
 }
 .nav-logo img {
   width: 3vw;
@@ -78,18 +103,17 @@ a:visited {
   transition: 0.3s;
 }
 .nav-buttons a:nth-child(4):hover {
-  border-color: #000000;
-  background: rgb(153, 56, 236);
-  background: linear-gradient(
-    105deg,
-    rgba(153, 56, 236, 1) 0%,
-    rgba(128, 53, 241, 1) 25%,
-    rgba(102, 50, 246, 1) 51%,
-    rgba(57, 47, 251, 1) 80%,
-    rgba(60, 45, 255, 1) 100%
-  );
-  transition: 0.4s;
-  color: #ffffff;
+  border-color:  rgba(102, 50, 246, 1);
+    background: linear-gradient(
+            105deg,
+            rgba(153, 56, 236, 1) 0%,
+            rgba(128, 53, 241, 1) 25%,
+            rgba(102, 50, 246, 1) 51%,
+            rgba(57, 47, 251, 1) 80%,
+            rgba(60, 45, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
 }
 .nav-buttons a:nth-child(5) {
   width: 14vw;
@@ -111,13 +135,17 @@ a:visited {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
 }
 #landing-upper div h1 {
   font-size: 3vw;
+    font-weight: bold;
+    padding-right: 30%;
+    line-height: 63px;
+    margin-bottom: 30px;
 }
 #landing-upper div p{
     font-size: 1.5vw;
+    line-height: 45px;
 }
 
 /************LANDING************/
@@ -128,36 +156,74 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
+    padding: 0 10% 0 10%;
 }
 #landing-lower-left {
   width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  margin: 5% 0 5% 0;
+  margin: 7% 0 7% 0;
+}
+#landing-lower-left h1 {
+    font-size: 2.5vw;
+    font-weight: bold;
 }
 #landing-lower-left p {
     margin: 15px 0 0 0;
-    padding: 0 15% 0 15%;
-
+    padding: 0 20% 0 0;
+    font-size: 1vw;
 }
 #landing-lower-right {
   width: 50%;
 }
 /**********GET IN TOUCH**********/
+/*************TEXT**************/
 #get-in-touch {
+    font-family: 'Overpass', sans-serif;
   background-color: #f7fafc;
   display: flex;
   width: 100%;
   height: auto;
+    margin-top: 5%;
 }
 #get-in-touch-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
+    justify-content: space-around;
   width: 50%;
+
 }
+#get-in-touch-text div:nth-child(1){
+    margin-bottom: 30%;
+}
+#get-in-touch-text div:nth-child(1) span {
+    color: #999999;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-weight: bold;
+}
+#get-in-touch-text div:nth-child(1) h1 {
+    letter-spacing: -1.5px;
+    font-weight: bold;
+    font-size: 3vw;
+    margin: 10px 0 10px 0;
+}
+#get-in-touch-text div:nth-child(1) h2 {
+    font-weight: bold;
+    font-size: 1vw;
+}
+#get-in-touch-text div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20%;
+}
+#get-in-touch-text div:nth-child(2) span{
+   margin-bottom: 20px;
+    font-size: 1vw;
+}
+/**********GET IN TOUCH**********/
+/*************FORM**************/
 #get-in-touch-form {
   width: 50%;
 }
@@ -166,16 +232,20 @@ a:visited {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding-left: 15%;
+    height: 100%;
 }
 #get-in-touch-form form input {
     width: 24vw;
-    height: 45px;
+    height: 4vw;
+    font-size: 1vw;
     margin: 10px 0 10px 0;
     padding: 0 0 0 20px;
     border: 1px solid #C9CCD4;
     box-sizing: border-box;
     border-radius: 6px;
 }
+
 #get-in-touch-form form div {
     display: flex;
     align-items: center;
@@ -183,11 +253,13 @@ a:visited {
     text-align: left;
     background-color: black;
     color: white;
-    width: 12vw;
+    width: 11vw;
     height: 3.5vw;
     border-radius: 6px;
     padding: 0 5px 0 5px;
+    margin-top: 10px;
 }
+
 #get-in-touch-form form div input {
     font-weight: bold;
     text-align: left;
@@ -201,16 +273,19 @@ a:visited {
 #get-in-touch-form form div img {
     width: 1.1vw;
 }
+
 /*************FOOTER*************/
 footer {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
+
 }
 #footer-links-container {
   display: flex;
-  justify-content: space-around;
-  margin: 7% 0 7% 0;
+  justify-content: space-between;
+  margin: 1% 0 1% 0;
+    padding: 0 10% 0 10%;
 }
 .footer-column {
   display: flex;
@@ -230,8 +305,9 @@ footer {
 }
 footer span {
   width: 100%;
-  height: auto;
+  height: 25px;
   text-align: center;
+    color: #73738D;
 }
 /*************JOBS*************/
 .jobs-container {
