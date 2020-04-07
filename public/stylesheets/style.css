@@ -15,6 +15,20 @@ a:visited {
   text-decoration: none;
   color: black;
 }
+#button {
+    background-color: #3C2DFF;
+    color: #FFFFFF;
+    width: 35%;
+    height: 45px;
+    font-size: 1vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin: 20px 0 20px 0;
+}
 /*************NAVBAR*************/
 .navbar {
   display: flex;
@@ -80,13 +94,52 @@ a:visited {
   color: #3c2dff;
   text-transform: uppercase;
 }
-/*************LANDING*************/
+/************LANDING************/
+/*************UPPER*************/
 #landing-upper {
-  display: flex;
+
+    display: flex;
+    justify-content: center;
+    margin: 2% 0 2% 0;
 }
+#landing-upper div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#landing-upper div h1 {
+    font-size: 3vw;
+}
+#landing-upper div p{
+
+    font-size: 1.5vw;
+}
+
+/************LANDING************/
+/*************LOWER*************/
 #landing-lower {
-  background-color: #3c2dff;
-  color: #ffffff;
+    background-color: #3C2DFF;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#landing-lower-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 0 5% 0;
+}
+#landing-lower-left p {
+    margin: 15px 0 0 7px;
+    padding: 0 15% 0 15%;
+}
+#landing-lower-right {
+    width: 50%;
 }
 /**********GET IN TOUCH**********/
 #get-in-touch {
@@ -105,10 +158,11 @@ a:visited {
   width: 50%;
 }
 #get-in-touch-form form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #get-in-touch-form form input {
@@ -144,11 +198,10 @@ footer {
   margin: 5px 0 5px 0;
 }
 footer span {
-  width: 100%;
-  height: auto;
-  text-align: center;
+    width: 100%;
+    height: auto;
+    text-align: center;
 }
-
 /*************JOBS*************/
 .jobs-container {
   padding: 64px 0;
