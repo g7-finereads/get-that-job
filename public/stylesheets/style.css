@@ -20,19 +20,19 @@ a:visited {
   color: black;
 }
 .button {
-  border: none;
-  background-color: #3c2dff;
-  color: #ffffff;
-  width: 35%;
-  height: 45px;
-  font-size: 1vw;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  border-radius: 4px;
-  margin: 20px 0 20px 0;
+    border: none;
+    background-color: #3C2DFF;
+    color: #FFFFFF;
+    width: 35%;
+    height: 45px;
+    font-size: 1vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin: 20px 0 20px 0;
 }
 /*************NAVBAR*************/
 .navbar {
@@ -116,8 +116,8 @@ a:visited {
 #landing-upper div h1 {
   font-size: 3vw;
 }
-#landing-upper div p {
-  font-size: 1.5vw;
+#landing-upper div p{
+    font-size: 1.5vw;
 }
 
 /************LANDING************/
@@ -138,8 +138,9 @@ a:visited {
   margin: 5% 0 5% 0;
 }
 #landing-lower-left p {
-  margin: 15px 0 0 7px;
-  padding: 0 15% 0 15%;
+    margin: 15px 0 0 0;
+    padding: 0 15% 0 15%;
+
 }
 #landing-lower-right {
   width: 50%;
@@ -161,16 +162,44 @@ a:visited {
   width: 50%;
 }
 #get-in-touch-form form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
-
 #get-in-touch-form form input {
-  width: 40%;
-  height: 45px;
-  margin: 10px 0 10px 0;
+    width: 24vw;
+    height: 45px;
+    margin: 10px 0 10px 0;
+    padding: 0 0 0 20px;
+    border: 1px solid #C9CCD4;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+#get-in-touch-form form div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    background-color: black;
+    color: white;
+    width: 12vw;
+    height: 3.5vw;
+    border-radius: 6px;
+    padding: 0 5px 0 5px;
+}
+#get-in-touch-form form div input {
+    font-weight: bold;
+    text-align: left;
+    background-color: black;
+    color: white;
+    width: auto;
+    height: auto;
+    border:none;
+    font-size: 0.8vw;
+}
+#get-in-touch-form form div img {
+    width: 1.1vw;
 }
 /*************FOOTER*************/
 footer {
@@ -221,7 +250,7 @@ footer span {
 }
 
 .search__input {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
   background-color: white;
   font-size: 13px;
   color: #4a5568;
@@ -254,7 +283,7 @@ footer span {
   margin-top: 20px;
   padding: 0 1em;
   border-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
   background-color: white;
   height: 82px;
   display: flex;
