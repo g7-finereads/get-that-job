@@ -1,9 +1,60 @@
+<main class="jobs-container">
 
-<h1>Jobs For You</h1>
-<p>---Here goes the search and filters--</p>
+  <h1>Jobs For You</h1>
 
-<ul>
-  <%= erb :"includes/job_item" %>
-  <%= erb :"includes/job_item" %>
-  <%= erb :"includes/job_item" %>
-</ul>
+  <section class="search">
+
+    <div class="search-container-left">
+      <div>
+        <img src="assets/search.png" alt="" class="search__input--img">
+        <input type="text" name="" id="" placeholder="Find that job!" class="search__input search__input--text">
+      </div>
+
+      <select name="country" id="" class="search__input search__input--country">
+        <option value="" hidden >Country</option>
+        <option value="pe">Perú</option>
+        <option value="co">Colombia</option>
+        <option value="ar">Argentina</option>
+      </select>
+      <select name="type" id="" class="search__input search__input--type">
+        <option value="" hidden >Type</option>
+        <option value="pe">Perú</option>
+        <option value="co">Colombia</option>
+        <option value="ar">Argentina</option>
+      </select>
+      <select name="salary" id="" class="search__input search__input--salary">
+        <option value="" hidden >Salary range</option>
+        <option value="pe">Perú</option>
+        <option value="co">Colombia</option>
+        <option value="ar">Argentina</option>
+      </select>
+      <select name="experience" id="" class="search__input search__input--experience">
+        <option value="" hidden >Experience</option>
+        <option value="pe">Perú</option>
+        <option value="co">Colombia</option>
+        <option value="ar">Argentina</option>
+      </select>      
+    </div>    
+
+    <div>
+      <select name="country" id="" class="search__input search__input--recommended">
+        <option value="" hidden >Recommended</option>
+        <option value="pe">Perú</option>
+        <option value="co">Colombia</option>
+        <option value="ar">Argentina</option>
+      </select> 
+    </div>
+
+  </section>  
+
+  <ul>
+    <%= erb :"includes/job_item" %>
+    <%= erb :"includes/job_item" %>
+    <%= erb :"includes/job_item" %>
+    <%= erb :"includes/job_item" %>
+    <%= erb :"includes/job_item" %>
+    <%= erb :"includes/job_item" %>
+  </ul>
+
+  <button class="button_blue">Load more</button>
+</main>
